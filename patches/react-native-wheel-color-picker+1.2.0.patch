@@ -1,0 +1,67 @@
+diff --git a/node_modules/react-native-wheel-color-picker/ColorPicker.js b/node_modules/react-native-wheel-color-picker/ColorPicker.js
+index fd72231..b48bf0a 100644
+--- a/node_modules/react-native-wheel-color-picker/ColorPicker.js
++++ b/node_modules/react-native-wheel-color-picker/ColorPicker.js
+@@ -19,16 +19,16 @@ const srcSlider = require('./assets/graphics/ui/black-gradient.png')
+ const srcSliderRotated = require('./assets/graphics/ui/black-gradient-rotated.png')
+ 
+ const PALETTE = [
+-	'#000000',
+-	'#888888',
+-	'#ed1c24',
+-	'#d11cd5',
+-	'#1633e6',
+-	'#00aeef',
+-	'#00c85d',
+-	'#57ff0a',
+-	'#ffde17',
+-	'#f26522',
++	'#fcf9cf',
++	'#eafccf',
++	'#cffcdf',
++	'#cffcef',
++	'#cff6fc',
++	'#cfe6fc',
++	'#cfd7fc',
++	'#ddcffc',
++	'#f1cffc',
++	'#fccfeb',
+ ]
+ 
+ const RGB_MAX = 255
+@@ -704,23 +704,26 @@ const ss = StyleSheet.create({
+ 		flexDirection: 'row',
+ 		justifyContent: 'space-between',
+ 		marginTop: 16,
++		
+ 		// padding: 16,
+ 	},
+ 	swatch: {
+-		width: 20,
+-		height: 20,
+-		borderRadius: 10,
+-		// borderWidth: 1,
+-		borderColor: '#8884',
++		width: 22,
++		height: 22,
++		borderRadius: 11,
++		borderWidth: 2,
++		borderColor: '#000',
++		// borderColor: '#8884',
+ 		alignItems: 'center',
+ 		justifyContent: 'center',
+ 		overflow: 'visible',
++		
+ 	},
+ 	swatchTouch: {
+-		width: 30,
+-		height: 30,
+-		borderRadius: 15,
+-		backgroundColor: '#f004',
++		width: 22,
++		height: 22,
++		borderRadius: 11,
++		// backgroundColor: '#f004',
+ 		overflow: 'hidden',
+ 	},
+ })
